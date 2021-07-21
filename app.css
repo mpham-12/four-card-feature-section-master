@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: Very Light Gray: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+h1 {
+   color: hsl(234, 12%, 34%);
+   font-weight: 200;
+   text-align: center;
+   font-size: 25px;
+   margin: 80px 3px 5px;
+}
+
+.header-bold {
+    font-weight: 700;
+}
+
+.p1 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: hsl(229, 6%, 66%);
+    padding-bottom: 70px;
+    text-align: center;
+margin-top: 0px 10px;
+}
+
+.card1 {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    border-radius: 7px;
+    background-color: white;
+    width: 250px;
+    padding: 5px 30px 20px;
+    margin-bottom: 25px;
+    box-shadow: 5px 10px 10px lightgray;
+}
+.card2 {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    border-radius: 7px;
+    background-color: white;
+    padding: 5px 30px 20px;
+    width: 250px;
+    margin-bottom: 25px;
+    box-shadow: 5px 10px 10px lightgray;
+}
+.card3 {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    border-radius: 7px;
+    background-color: white;
+    padding: 5px 30px 20px;
+    width: 250px;
+    margin-bottom: 25px;
+    box-shadow: 5px 10px 10px lightgray;
+}
+.card4 {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    border-radius: 7px;
+    background-color: white;
+    padding: 5px 30px 20px;
+    width: 250px;
+    margin-bottom: 25px;
+    box-shadow: 5px 10px 10px lightgray;
+}
+h2 {
+    color: hsl(234, 12%, 34%);
+}
+.p2 {
+    color: hsl(229, 6%, 66%);
+}
+.p3 {
+    color: hsl(229, 6%, 66%);
+}
+.p4 {
+    color: hsl(229, 6%, 66%);
+}
+.p5 {
+    color: hsl(229, 6%, 66%);
+}
+.image {
+position: relative;
+left: 180px;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+    }
+    .p1 {
+        display: flex;
+        width: 550px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        gap: 30px;
+    }
+
+    .card1 {
+        order: 1;
+        grid-column: 1/2;
+     position: relative;
+     top: 55%;
+    }
+
+    .card2 {
+        order: 2;
+        grid-column: 2/3;
+
+    }
+
+    .card4 {
+        order: 3;
+        grid-column: 3/4;
+        position: relative;
+        top: 55%;
+    }
+    .card3 {
+        order: 4;
+        grid-column: 2/3;
+        
+    }
+}
